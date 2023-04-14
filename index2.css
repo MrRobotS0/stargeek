@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css?family=Inder:400");
+
+@media screen and (max-width: 376px) {
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        width: 100%;
+    }
+      
+    header {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+      
+    header .logo {
+        margin: 0;
+        font-size: 28px;
+    }
+      
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+      
+    .banner {
+        background-image: url(imagens/blade.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .textoemcima {
+        width: 350px;
+        height: 250px;
+        background-color: rgba(12, 12, 12, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:start;
+        color: white;
+        position: relative;
+    }
+    
+    .textoemcima h3 {
+        position: absolute;
+        padding-top: 20px;
+        padding-right: 250px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        text-shadow: #101010 10px 10px 10px;
+    }
+    
+    .textoemcima h2 {
+        margin: 0;
+        text-shadow: #101010 10px 10px 10px;
+        top: 30%;
+    }
+    
+    .textoemcima p {
+        font-size: 20px;
+        margin: 0;
+        text-shadow: #101010 10px 10px 10px;
+        top: 30%;
+    }
+    
+    .botoes {
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+    }
+    
+    .assistir {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: white 1px solid;
+        margin-right: 40px;
+    }
+    
+    .listar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: white 1px solid;
+        padding-bottom: 10px;
+    }
+      
+    .catalog {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+      
+    .column {
+        padding: 5px;
+    }
+    .column h1 {
+        font-size: 18px;
+    }
+      
+    .movie {
+        background-color: #000000;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+      
+    .movie img {
+        max-width: 75%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+      
+    .movie h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .footer2 {
+        background-color: black;
+        color: white;
+        border-top: 2px solid white;
+        padding: 30px 0;
+        font-family: Arial, sans-serif;
+    }
+      
+    .container2 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+      
+    .row2 {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .column2 {
+        flex: 1;
+        margin-right: 30px;
+    }
+      
+    .column2:last-child {
+        margin-right: 0;
+    }
+      
+    h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    ul li {
+        margin-bottom: 5px;
+    }
+      
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+      
+    ul li a:hover {
+        text-decoration: underline;
+    }
+      
+    p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+      
+    header {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+      
+    header .logo {
+        margin: 0;
+        font-size: 28px;
+    }
+      
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+      
+    .banner {
+        background-image: url(imagens/blade.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .textoemcima {
+        width: 400px;
+        height: 250px;
+        background-color: rgba(12, 12, 12, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align:start;
+        color: white;
+        position: relative;
+    }
+    
+    .textoemcima h3 {
+        position: absolute;
+        padding-top: 20px;
+        padding-right: 250px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        text-shadow: #101010 10px 10px 10px;
+    }
+    
+    .textoemcima h2 {
+        margin: 0;
+        text-shadow: #101010 10px 10px 10px;
+        top: 30%;
+    }
+    
+    .textoemcima p {
+        font-size: 20px;
+        margin: 0;
+        text-shadow: #101010 10px 10px 10px;
+        top: 30%;
+    }
+    
+    .botoes {
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+    }
+    
+    .assistir {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: white 1px solid;
+        margin-right: 40px;
+    }
+    
+    .listar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: white 1px solid;
+        padding-bottom: 10px;
+    }
+      
+    .catalog {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+      
+    .column {
+        flex-basis: 33.33%;
+        padding: 0 10px;
+    }
+      
+    .movie {
+        background-color: #000000;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+      
+    .movie img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+      
+    .movie h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .footer2 {
+        background-color: black;
+        color: white;
+        border-top: 2px solid white;
+        padding: 30px 0;
+        font-family: Arial, sans-serif;
+    }
+      
+    .container2 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+      
+    .row2 {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .column2 {
+        flex: 1;
+        margin-right: 30px;
+    }
+      
+    .column2:last-child {
+        margin-right: 0;
+    }
+      
+    h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    ul li {
+        margin-bottom: 5px;
+    }
+      
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+      
+    ul li a:hover {
+        text-decoration: underline;
+    }
+      
+    p {
+        margin: 0;
+    }
+}

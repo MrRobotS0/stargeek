@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css?family=Inder:400");
+
+@media screen and (max-width: 376px) {
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        width: 100%;
+    }
+      
+    header {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+      
+    header .logo {
+        margin: 0;
+        font-size: 28px;
+    }
+      
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+      
+    .banner {
+        background-image: url(imagens/sand.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .conte {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+        mar
+        width: 1000px;
+    }
+      
+    label {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 10px;
+    }
+      
+    #nome-item {
+        height: 30px;
+        background-color: black;
+        border: white 1px solid;
+        font-size: 16px;
+        color: white;
+    }
+      
+    #descricao {
+        background-color: black;
+        border: white 1px solid;
+        font-size: 16px;
+        color: white;
+        height: 300px;
+        resize: vertical;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+    
+    .inserir {
+        width: 130px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer2 {
+        background-color: black;
+        color: white;
+        border-top: 2px solid white;
+        padding: 30px 0;
+        font-family: Arial, sans-serif;
+    }
+      
+    .container2 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+      
+    .row2 {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .column2 {
+        flex: 1;
+        margin-right: 30px;
+    }
+      
+    .column2:last-child {
+        margin-right: 0;
+    }
+      
+    h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    ul li {
+        margin-bottom: 5px;
+    }
+      
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+      
+    ul li a:hover {
+        text-decoration: underline;
+    }
+      
+    p {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+    }
+      
+    header {
+        background-color: #000000;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+      
+    header .logo {
+        margin: 0;
+        font-size: 28px;
+    }
+      
+    header a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-left: 10px;
+    }
+      
+    .banner {
+        background-image: url(imagens/sand.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .conte {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+        mar
+        width: 1000px;
+    }
+      
+    label {
+        font-weight: bold;
+        font-size: 30px;
+        margin: 10px;
+    }
+      
+    #nome-item {
+        height: 30px;
+        background-color: black;
+        border: white 1px solid;
+        font-size: 16px;
+        color: white;
+    }
+      
+    #descricao {
+        background-color: black;
+        border: white 1px solid;
+        font-size: 16px;
+        color: white;
+        height: 300px;
+        resize: vertical;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px;
+    }
+    
+    .inserir {
+        width: 130px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer2 {
+        background-color: black;
+        color: white;
+        border-top: 2px solid white;
+        padding: 30px 0;
+        font-family: Arial, sans-serif;
+    }
+      
+    .container2 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+      
+    .row2 {
+        display: flex;
+        justify-content: space-between;
+    }
+      
+    .column2 {
+        flex: 1;
+        margin-right: 30px;
+    }
+      
+    .column2:last-child {
+        margin-right: 0;
+    }
+      
+    h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+      
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+      
+    ul li {
+        margin-bottom: 5px;
+    }
+      
+    ul li a {
+        color: white;
+        text-decoration: none;
+    }
+      
+    ul li a:hover {
+        text-decoration: underline;
+    }
+      
+    p {
+        margin: 0;
+    }
+}
