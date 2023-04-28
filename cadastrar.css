@@ -222,7 +222,12 @@
         font-size: 30px;
         margin: 10px;
     }
-      
+
+    textarea {
+        background-color: #000000;
+        color: white;
+    }
+
     #nome-item {
         height: 30px;
         background-color: black;
