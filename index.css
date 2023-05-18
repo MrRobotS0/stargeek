@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Inder:400");
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 999px) {
     body {
         background-color: black;
         color: white;
