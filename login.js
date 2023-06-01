@@ -9,8 +9,21 @@ formulario.onsubmit = (evt)=>{
     dados.forEach((elemento) => {
         if(elemento.emailcliente == email.value && elemento.senhacliente == senha.value){
             msg.innerHTML = "Aguarde redirecionando..."
+            evemto.preventDefault();
+            sessionStorage.setItem("logado", email.value);
+            setTimeout(() => {
+                window.location.assign("catalogo.html");
+                
+            }, 2000);
+            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
+            dados.push(
+                {
+                    email : email.value
+                }
+            )
+            sessionStorage.setItem("logado", JSON.stringify(dados));
             setTimeout(()=>{
-                window.location.assign("cat.html");
+                window.location.assign("catalogo.html");
             }, 2000);
             evt.preventDefault();
             logado = "ok";

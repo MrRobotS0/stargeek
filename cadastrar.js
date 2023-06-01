@@ -73,6 +73,7 @@ function salvaEdicao(pfoto){
   dados[pindice].nome = nome.value;
   dados[pindice].descricao = descricao.value;
   dados[pindice].foto = pfoto;
+  dados[pindice].email = emaillogado;
   localStorage.setItem("catalogo", JSON.stringify(dados));
 
 }

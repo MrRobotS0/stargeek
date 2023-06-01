@@ -39,8 +39,7 @@ formulario.onsubmit = (evento) =>{
 function criarUsuario(evento){
     let dados = JSON.parse(localStorage.getItem("bd")) || [];
     dados.push(
-        {
-        nomecliente : nome.value,
+        {   
         emailcliente : email.value,
         senhacliente : senha.value
         }
