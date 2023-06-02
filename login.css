@@ -80,6 +80,10 @@
         color: white;
     }
 }
+
+.mensagem{
+    color: wheat;
+}
       
 @media screen and (min-width: 1024px) {
     body {

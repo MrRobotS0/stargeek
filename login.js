@@ -9,30 +9,19 @@ formulario.onsubmit = (evt)=>{
     dados.forEach((elemento) => {
         if(elemento.emailcliente == email.value && elemento.senhacliente == senha.value){
             msg.innerHTML = "Aguarde redirecionando..."
-            evemto.preventDefault();
+            evt.preventDefault();
             sessionStorage.setItem("logado", email.value);
             setTimeout(() => {
                 window.location.assign("catalogo.html");
-                
             }, 2000);
-            let dados = JSON.parse(sessionStorage.getItem("logado")) || [];
-            dados.push(
-                {
-                    email : email.value
-                }
-            )
-            sessionStorage.setItem("logado", JSON.stringify(dados));
-            setTimeout(()=>{
-                window.location.assign("catalogo.html");
-            }, 2000);
-            evt.preventDefault();
             logado = "ok";
             return true;
         }
-        if (logado!="ok") {
-            msg.innerHTML = "Usuario ou senha incorretos"
-            evt.preventDefault()
-            return null;
-        }
     });
+
+    if (logado!="ok") {
+        msg.innerHTML = "Usuario ou senha incorretos"
+        evt.preventDefault()
+        return null;
+    }
 }

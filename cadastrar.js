@@ -11,6 +11,9 @@ if (peditar == "true"){
   editar(pindice);
 }
 
+var emaillogado;;
+femaillogado();
+
 botaocadastrar.onclick = (evento)=>{
   
   if ((peditar != "true") || (peditar == null)){
@@ -22,24 +25,26 @@ botaocadastrar.onclick = (evento)=>{
                                       {
                                         nome: nome.value,
                                         descricao: descricao.value,
+                                        email: emaillogado,
                                         foto: nomeArq
                                         }
                                      )
                         localStorage.setItem("catalogo", JSON.stringify(dados));
-                        window.location.assign("catalogo.html");
-                        
+                        window.location.assign("catalogo.html"); 
                      }else{
                         alert("Houve erro no envio do arquivo");
                      }
 
                     });
-      }else
-      {
-        editarenvio(evento);
-        window.location.assign("catalogo.html");
-      }
-    
+    }else
+    {
+      editarenvio(evento);
+      window.location.assign("catalogo.html");
+    }
 }
+
+var fotoa;
+
 function editar(indice){
   nome.value = "editar";
   descricao.value = "editar";
@@ -48,9 +53,8 @@ function editar(indice){
   nome.value = dados[indice].nome;
   descricao.value = dados[indice].descricao;
   fotoa= dados[indice].foto;
- 
 }
-var fotoa;
+
 function editarenvio(evento){
      evento.preventDefault();
     if ((fotoa != foto.value)&&(foto.value != "")){
@@ -62,7 +66,7 @@ function editarenvio(evento){
                        }
                     });
    }
-   else
+   elsestringify
    {
         salvaEdicao(fotoa);
    } 
@@ -86,7 +90,6 @@ async function fenvio() {
     console.log(JSON.stringify(formData.values[0]));
     console.log(JSON.stringify(formData.values[1]));
     try{
-         
          var resp = await fetch(url, {
                                        method: 'POST',
                                        body: formData,
@@ -106,4 +109,13 @@ async function fenvio() {
         console.error(error);
         return false;
       }
+}
+
+function femaillogado(){
+  let dados = sessionStorage.getItem("logado");
+  if (dados == null){
+      window.location.assign("login.html");
+  } else {
+      emaillogado = dados;
+  }
 }
